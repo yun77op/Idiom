@@ -1,0 +1,30 @@
+<div id="ui-dialog-settings">
+	<ul>
+		<li><a href="#settings-tab">设置</a></li>
+		<li><a href="#about-tab">关于</a></li>
+	</ul>
+	<div id="settings-tab">
+	<% for (var ns in settings) { %>
+		<figure>
+			<% var nsEl = settings[ns]; %>
+			<figcaption><%= nsEl.label %></figcaption>
+			<% for (var key in nsEl.settings) { %>
+				<% var name = 'settings-' + ns + '-' + key; %>
+				<% var el = nsEl.settings[key]; %>
+				<p>
+					<% if (typeof el.value == 'boolean') { %>
+						<input id="<%= name %>" type="checkbox" <% if (el.value) { %> checked <% } %>>
+					<% } else { %>
+						<input id="<%= name %>" type="number" step="2" value="<%= el.value %>">
+						<span class="metric">分<span>
+					<% } %>
+					<label for="<%= name %>"><%= el.label %></label>
+				</p>
+			<% } %>
+		</figure>
+	<% } %>
+	</div>
+	<div id="about-tab">
+		<p><a href="http://weibo.com/holohuhu">@thisloveless</a><br><img src="images/avator.jpg"></p>
+	</div>
+</div>

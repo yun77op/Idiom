@@ -1,0 +1,90 @@
+
+button, .button {
+	display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important;
+	cursor: pointer; text-align: center; zoom: 1; overflow: visible; /* the overflow property removes extra width in IE */
+}
+
+.button1 {
+	padding: .3em .7em;
+	border: none;
+	background: -moz-linear-gradient(top, #f1f1c2, rgba(200, 200, 200, .6));
+	background: -webkit-linear-gradient(top, #f1f1c2, rgba(200, 200, 200, .6));
+	color: #AAA;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+	border-radius: 3px;
+	text-shadow: 1px 0 1px rgba(200, 200, 200, .4);
+}
+
+.button1:hover {
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
+}
+
+.button1:active {
+	background: -moz-linear-gradient(top, rgba(200, 200, 200, .6), #f1f1c2);
+	background: -webkit-linear-gradient(top, rgba(200, 200, 200, .6), #f1f1c2);
+}
+
+/*	Primary styles 
+		Author: 
+	*/
+
+
+
+#game {
+	position: relative;
+	margin-top: 40px;
+	width: 950px;
+	height: 620px;
+}
+
+#game-menu {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -50px 0 0 -100px;
+}
+
+#game-return {
+	position: absolute;
+	top: -30px;
+	left: 50%;
+}
+
+#game-solve {
+	position: absolute;
+	left: 50%;
+	top: 160px;
+	margin-left: 50px;
+}
+
+#game-level-scene {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #FFF;
+}
+
+#game-level-scene li {
+	float: left;
+	width: 5em;
+	margin: 0 3em 1em 0;
+	font-size: 2.4em;
+	text-align: center;
+}
+
+#game-level-scene li.locked {
+	text-indent: -9999em;
+	background: url(../images/lock.png) no-repeat center center;
+}
+
+#game-level-scene a {
+	padding: .2em .5em;
+	border-radius: 3px;
+	background: #CCC;
+}
+
+#game-level-scene h2 {
+	text-align: center;
+}
