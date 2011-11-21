@@ -1,0 +1,7 @@
+h3. Idiom
+
+html5拼英文单词游戏
+
+h3. Demo
+---------------
+"http://devilalbum.com/dev/idiom/":http://devilalbum.com/dev/idiom/
